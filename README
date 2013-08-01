@@ -1,0 +1,62 @@
+	 _____                     _              __  ______  ___  
+	/  ___|                   | |            / _| | ___ \/ _ \ 
+	\ `--.  ___ __ _ _ __ __ _| |__     ___ | |_  | |_/ / /_\ \
+	 `--. \/ __/ _` | '__/ _` | '_ \   / _ \|  _| |    /|  _  |
+	/\__/ / (_| (_| | | | (_| | |_) | | (_) | |   | |\ \| | | |
+	\____/ \___\__,_|_|  \__,_|_.__/   \___/|_|   \_| \_\_| |_/
+
+::=-------------------------------------------------------------------=::                                                   
+
+Written by: David Pettifor
+
+
+===--- ABOUT ---===
+The game "Scarab of RA" was originally a shareware application for
+the Macintosh OS 6/7.  It was written by a fellow named Rick Holzgrafe.
+
+This is a step-motion adventure game re-creation of this old Mac game, 
+written entirely in HTML5/JavaScript.  Because of this, it is playable
+on any modern computer (and some mobile devices!).
+
+All images, text, and code has been hand-written by me - nothing but
+the idea has been used from the original game.  However, if you have
+ever played the original, you will quickly learn that the "look-and-feel"
+of this version is quite similar, bringing back many fun memories.
+
+
+
+===--- THE GAME ---===
+You start off as an undergrad in Archeology, and a recent discovery
+has led you into a solo expedition of exploring the Temple of RA.
+Much like any traditional Egyptian pyramid, you start at the top-most
+level: a 3 x 3 maze.  Each level increases these dimensions by 1 (4 x 4,
+5 x 5, and so on).  In order to move on to the next level, you must
+find the key to the exit door, then find the exit.  Using the key
+while facing the exit door will start you on the next level!
+
+There are many perils and treasures to be found within the great
+Temple of RA.  Three of which must be recovered in order to beat
+the game.  These are, of course, the three ancient artifacts of RA:
+the crown of RA, the staff of RA, and the scarab of RA.  Other
+treasures may help aid you in your adventure, some more useful than
+others.  But keep a wary eye out for various inhabitants of the great
+Temple!
+
+
+===--- TO RUN ---==
+Simply open the 'index.html' file at the root and you're off!
+Controls are, by default:
+	
+	Move Forward:	Up Arrow
+	Move Backward:	Down Arrow
+	Turn Left:	Left Arrow
+	Turn Right: 	Right Arrow
+	Toggle Map:	M
+	Pickup Item:	P
+	Drop Item:	D
+	Use Item: 	U
+	View Level #:	L
+
+These controls can always be adjusted by clicking on the small "Up Arrow"
+in the bottom right corner of your screen.
+
