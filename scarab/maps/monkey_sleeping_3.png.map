@@ -1,0 +1,10 @@
+<img src="monkey_sleeping_3.png" width="604" height="420" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:David -->
+<area shape="poly" coords="293,138,301,135,309,138,306,145,310,148,318,161,319,159,320,152,316,149,313,150,312,148,320,149,323,153,323,160,317,169,303,168,302,164,298,159,298,166,294,167,293,150,295,147" href="http://google.com" />
+</map>

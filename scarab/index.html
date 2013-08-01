@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Scarab of RA</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="jquery-ui-1.8.22.custom.css" />
+        <link rel="stylesheet" type="text/css" href="iphone.css" />
+        <script type="text/javascript" language="JavaScript" src="raphael-min.js"></script>
+        <script type="text/javascript" language="JavaScript" src="jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" language="JavaScript" src="jquery-ui-1.8.22.custom.min.js"></script>
+        <script type="text/javascript" language="JavaScript" src="hieroglyphics.js"></script>
+        <script type="text/javascript" language="JavaScript" src="messaging.js"></script>
+        <script type="text/javascript" language="JavaScript" src="player_status.js"></script>
+        <script type="text/javascript" language="JavaScript" src="item.js"></script>
+        <script type="text/javascript" language="JavaScript" src="items.js"></script>
+        <script type="text/javascript" language="JavaScript" src="defense.js"></script>
+        <script type="text/javascript" language="JavaScript" src="progress_bar.js"></script>
+        <script type="text/javascript" language="JavaScript" src="gui_menus.js"></script>
+        <script type="text/javascript" language="JavaScript" src="gui_interactions.js"></script>
+        <script type="text/javascript" language="JavaScript" src="gui_setup.js"></script>
+        <script type="text/javascript" language="JavaScript" src="drawing.js"></script>
+        <script type="text/javascript" language="JavaScript" src="maze.js"></script>
+        <script type="text/javascript" language="JavaScript" src="draw_maze.js"></script>
+        <script type="text/javascript" language="JavaScript" src="update_view.js"></script>
+        <script type="text/javascript" language="JavaScript" src="movement.js"></script>
+        <script type="text/javascript" language="JavaScript" src="gameIO.js"></script>
+        <script type="text/javascript" language="JavaScript" src="traps.js"></script>
+        <script type="text/javascript" language="JavaScript" src="character_images.js"></script>
+        <script type="text/javascript" language="JavaScript" src="character_maps.js"></script>
+        <script type="text/javascript" language="JavaScript" src="characters.js"></script>
+        <script type="text/javascript" language="JavaScript" src="ai.js"></script>
+        <script type="text/javascript" language="JavaScript" src="settings.js"></script>
+        
+        <link rel="SHORTCUT ICON" href="images/beetle_small.ico" />
+    </head>
+    
+    <body onKeyDown="return KeyPress(event);">
+        <br>
+					<!-- view map button -->
+			        <button type="button" onclick="ToggleMap();" id="view_map_button" class="view_map" style="vertical-align: top; position: relative; left: -90px; top: 20px;">View Map</button>
+					<!-- Movement Buttons -->
+					<div id="movement_controls" class="movement_controls"></div>
+					
+					<!-- Main Screen -->
+					<DIV id="view" style="display: inline-block; border: 1px solid black; width: 604px; height: 420px; background-color: #FFF;"></DIV>
+					<!-- Map -->
+					<div id="map_view" class="map_view"></div>
+					<!-- Click-to-fire --
+					<div id="fire_defense" style="width: 604px; height: 420px; border: 0px solid green; overflow: auto;" onclick="ActiveDefense(event);"></div> -->
+					<div id="fire_defense" style="width: 604px; height: 420px; border: 0px solid green; overflow: auto;"></div>
+					
+<br>
+        <DIV id="needle" style="border: 0px; width: 14; height: 55;"></DIV>
+        <DIV id="compass" style="border: 0px; width: 100px; height: 100px; margin-left: auto; margin-right: auto; text-align: center;"></DIV>
+        
+        <!-- Inventory List -->
+        <DIV id="inventory"></DIV>
+        <!-- Inventory Description -->
+        <DIV id="inventory_description" class="inventory_description"></DIV>
+        
+        <!-- Use button -->
+        <button id="use_button" class="use_button" onclick="UseSelectedItem();">Use</button>
+        
+        <!-- Drop button -->
+        <button id="drop_button" class="drop_button" onclick="DropDialog();">Drop</button>
+        
+        <!-- Pickup button -->
+        <button id="pickup_button" class="pickup_button" onclick="PickupItem();" disabled="disabled">Pickup</button>
+        
+        <!-- save and load buttons -->
+        <button id="save_button" onclick="SaveGameDialog();">Save New</button>
+        <button id="load_button" onclick="LoadGameDialog();">Load Saved Game</button>
+        <button id="update_button" onclick="UpdateLastSave();" disabled="disabled">Save</button>
+        
+        <!-- attack items -->
+        <DIV id="attack_items" class="attack_items"></DIV>
+        
+        <!-- Status Box -->
+        <DIV id="status_window" class="status_window"></DIV>        
+        
+        <!-- Settings Box -->
+        <DIV id="settings_panel" class="settings_panel"></DIV>
+        <!-- "Bring up settings" button -->
+        <DIV id="open_settings" class="open_settings" title="Settings">&uarr;</DIV>
+        
+        <script type="text/javascript">
+            LoadImages();
+        </script>
+        
+        <br><br>
+        
+        
+        <!-- The following is a generic template for a menu, and is used/updated any time a menu is clicked (apple-logo, Game, Map, Speed, Inventory, Help, or Hints) -->
+        <DIV id="generic_menu"></DIV>
+        </DIV>
+    </body>
+</html>

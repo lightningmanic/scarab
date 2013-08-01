@@ -1,0 +1,10 @@
+<img src="monkey_4.png" width="604" height="420" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:David -->
+<area shape="poly" coords="293,139,298,137,301,140,308,140,310,138,307,135,305,136,304,135,308,134,310,136,311,139,310,143,308,147,305,153,305,147,301,153,302,147,297,152,299,150,297,147,294,149,293,151,292,151,292,150,294,145,293,142,293,141" href="http://google.com" />
+</map>

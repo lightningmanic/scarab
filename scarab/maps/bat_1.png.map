@@ -1,0 +1,10 @@
+<img src="bat_1.png" width="604" height="420" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:David -->
+<area shape="poly" coords="192,119,193,111,203,99,223,87,228,85,243,85,259,81,265,79,265,71,273,64,280,65,287,61,298,37,309,22,322,12,339,6,342,7,339,11,338,21,340,25,332,34,327,48,327,59,322,60,311,72,307,84,307,88,305,94,294,104,284,104,274,105,258,109,247,117,235,116,226,117,214,121,208,123,201,120" href="http://google.com" />
+</map>

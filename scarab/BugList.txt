@@ -1,0 +1,13 @@
+- Different method of displaying information about selected item?
+- Add drop all/drop one buttons
+- Turning on a trap notifies you twice
+- Walking speed affects chances of waking NPC
+- Render traps first, then items, then NPCs
+- Center all text in right column
+- "quick access" button (chose in settings) next to inventory drop-down
+- new game button (possibly next to compass?)
+- pickup button enables when you find an NPC
+- adjust number of NPCs to not be so linear
+- adjust text when a monkey goes to sleep (no longer holding an item)
+- investigate no staff creation?
+- clear traps on each level

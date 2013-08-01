@@ -1,0 +1,602 @@
+body{
+	background-color: #111;
+}
+
+DIV
+{
+    font-family: Arial;    
+}
+
+select.inventory_list{
+	width: 170px;
+	background-color: #EEE;
+}
+
+div.inventory_description{
+	height: 160px;
+	background-color: #EEE;
+	font-size: small;
+	overflow-y: auto;
+	overflow-x: none;
+}
+
+.new_message{
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	background-color: #5BDEFF;
+	transition: background-color 2s, border-bottom 2s, border-top 2s;
+	-webkit-transition: background-color 2s, border-bottom 2s, border-top 2s;
+	-moz-transition: background-color 2s, border-bottom 2s, border-top 2s;
+	-o-transition: backgorund-color 2s, border-bottom 2s, border-top 2s;
+}
+
+.old_message{
+	border-bottom: 1px solid transparent;
+	background-color: transparent;
+	border-top: 1px solid transparent;
+}
+
+span.dart{
+	display: inline-block;
+	height: 3px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	width: 20px;
+	background-color: #FFF;
+	border: 1px solid #0569FF;
+	border-radius: 3px;
+}
+
+div.dart_holder{
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.dartgun_icon{
+	top: -6px;
+	position: relative;
+}
+
+.spray_icon{
+	top: -2px;
+	position: relative;
+	margin-left: 35px;
+	width: 20px;
+}
+
+div.attack_items{
+	height: 190px;
+	width: 170px;
+}
+
+.map_view{
+	height: 420px;
+	width: 604px;
+	border: 1px solid black;
+	overflow: auto;
+	-web-transition: height 2s;
+	-moz-transition: height 2s; /* Firefox 4 */
+	-webkit-transition: height 2s; /* Safari and Chrome */
+	-o-transition: height 2s; /* Opera */
+}
+
+.map_view_reveal{
+	height: 0px;
+}
+
+button.use_button{
+	position: absolute;
+}
+
+button.drop_button{
+	position: absolute;
+}
+
+button.pickup_button{
+	position: absolute;
+}
+
+div.status_window{
+	position: absolute;
+	top: 150px;
+	height: 230px;
+	color: #FFF;
+}
+
+div.status{
+	background-color: #EEE;
+	font-size: small;
+	border: 3px double black;
+	height: 192px;
+	color: #000;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+div.health{
+	width: 60%;
+	height: 15px;
+	border-radius: 5px;
+	border: 1px solid black;
+	display: inline-block;
+	position: relative;
+	float: right;
+	margin-right: 5px;
+}
+
+div.hunger{
+	width: 60%;
+	height: 15px;
+	border-radius: 5px;
+	border: 1px solid black;
+	display: inline-block;
+	position: relative;
+	float: right;
+	margin-right: 5px;
+}
+
+div.weight{
+	width: 60%;
+	height: 15px;
+	border-radius: 5px;
+	border: 1px solid black;
+	display: inline-block;
+	position: relative;
+	float: right;
+	margin-right: 5px;
+}
+
+div.prestige_points{
+	width: 50%;
+	height: 15px;
+	display: inline-block;
+	position: relative;
+	float: right;
+	margin-right: 10px;
+	text-align: right;
+}
+
+div.load_game{
+	width: 400px;
+	height: 250px;
+	left: 50%;
+	margin-left: -200px;
+	top: 100px;
+	display: block;
+	position: absolute;
+	border: 3px double black;
+	border-radius: 5px;
+	background-color: #FFF;
+}
+
+div.load_game button{
+	left: 50%;
+	margin-left: -37px;
+	width: 75px;
+	position: relative;
+}
+
+div.load_game_div{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 150px;
+	border: 1px solid black;
+	overflow-x: auto;
+	overflow-y: scroll;
+}
+
+div.save_as{
+	width: 400px;
+	height: 150px;
+	left: 50%;
+	margin-left: -200px;
+	top: 150px;
+	display: block;
+	position: absolute;
+	border: 3px double black;
+	border-radius: 5px;
+	background-color: #FFF;
+}
+
+div.save_as button{
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div.loadable_game{
+	vertical-align: top;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: hand;
+	font-size: small;
+	display: inline-block;
+	width: 291px;
+	padding-left: 10px;
+	border: 1px solid transparent;
+	transition: background-color 0.5s, border 0.5s;
+	-moz-transition: background-color 0.5s, border 0.5s; /* Firefox 4 */
+	-webkit-transition: background-color 0.5s, border 0.5s; /* Safari and Chrome */
+	-o-transition: background-color 0.5s, border 0.5s; /* Opera */
+}
+div.loadable_game:hover{
+	background-color: #ABCEFF;
+	border: 1px solid black;
+}
+
+div.del_saved_game{
+	display: inline-block;
+	width: 40px;
+	text-align: center;
+	cursor: hand;
+	border: 1px solid transparent;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	float: right;
+	font-size: small;
+	transition: background-color 0.5s, border 0.5s;
+	-moz-transition: background-color 0.5s, border 0.5s; /* Firefox 4 */
+	-webkit-transition: background-color 0.5s, border 0.5s; /* Safari and Chrome */
+	-o-transition: background-color 0.5s, border 0.5s; /* Opera */
+}
+
+div.del_saved_game:hover{
+	background-color: #F00;
+	border: 1px solid black;
+}
+
+span.save_as_name{
+	font-size: small;
+}
+
+div.drop_dialog{
+	width: 400px;
+	height: 150px;
+	left: 50%;
+	margin-left: -200px;
+	top: 150px;
+	display: block;
+	position: absolute;
+	border: 3px double black;
+	border-radius: 5px;
+	background-color: #FFF;
+}
+
+div.quantity_slider{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.pickup_dialog{
+	width: 400px;
+	height: 190px;
+	left: 50%;
+	margin-left: -200px;
+	top: 125px;
+	display: block;
+	position: absolute;
+	border: 3px double black;
+	border-radius: 5px;
+	background-color: #FFF;
+}
+
+.settings_panel{
+	width: 100%;
+	display: block;
+	position: absolute;
+	height: 0px;
+	background-color: #C5C5C5;
+	left: 0px;
+	z-index: 2;
+	bottom: 0px;	
+	transition: height 1s;
+	-moz-transition: height 1s; /* Firefox 4 */
+	-webkit-transition: height 1s; /* Safari and Chrome */
+	-o-transition: height 1s; /* Opera */
+}
+
+.open_settings{
+	display: block;
+	position: absolute;
+	right: 20px;
+	width: 20px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background-color: #C5C5C5;
+	bottom: 0px;
+	text-align: center;
+	padding-bottom: 2px;
+	cursor: hand;
+	z-index: 3;
+	transition: bottom 1s;
+	-moz-transition: bottom 1s; /* Firefox 4 */
+	-webkit-transition: bottom 1s; /* Safari and Chrome */
+	-o-transition: bottom 1s; /* Opera */
+}
+
+.open_settings_open{
+	bottom: 150px;
+}
+
+.settings_panel_expanded{
+	height: 150px;
+	border-top: 1px solid black;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	transition: height 1s;
+	-moz-transition: height 1s; /* Firefox 4 */
+	-webkit-transition: height 1s; /* Safari and Chrome */
+	-o-transition: height 1s; /* Opera */
+}
+
+.close_settings{
+	display: block;
+	position: absolute;
+	right: 20px;
+	width: 20px;
+	border: 1px solid black;
+	border-radius: 3px;
+	background-color: #FFF;
+	top: 10px;
+	text-align: center;
+	padding-bottom: 2px;
+	cursor: hand;
+}
+
+.input_forward{
+	display: block;
+	height: 28px;
+	width: 28px;
+	position: absolute;
+	left: 130px;
+	top: 30px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 2px 2px 2px 2px;
+	transition: border 0.5s, background-color 0.5s;
+	-moz-transition: border 0.5s, background-color 0.5s; /* Firefox 4 */
+	-webkit-transition: border 0.5s, background-color 0.5s; /* Safari and Chrome */
+	-o-transition: border 0.5s, background-color 0.5s; /* Opera */
+}
+
+.input_forward:hover{
+	border: 1px solid #00AAFF;
+}
+
+.input_backward{
+	display: block;
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	left: 130px;
+	top: 100px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 2px 2px 2px 2px;
+	transition: border 0.5s, background-color 0.5s;
+	-moz-transition: border 0.5s, background-color 0.5s; /* Firefox 4 */
+	-webkit-transition: border 0.5s, background-color 0.5s; /* Safari and Chrome */
+	-o-transition: border 0.5s, background-color 0.5s; /* Opera */
+}
+
+.input_backward:hover{
+	border: 1px solid #00AAFF;
+}
+
+.input_left{
+	display: block;
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	left: 96px;
+	top: 64px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 2px 2px 2px 2px;
+	transition: border 0.5s, background-color 0.5s;
+	-moz-transition: border 0.5s, background-color 0.5s; /* Firefox 4 */
+	-webkit-transition: border 0.5s, background-color 0.5s; /* Safari and Chrome */
+	-o-transition: border 0.5s, background-color 0.5s; /* Opera */
+}
+
+.input_left:hover{
+	border: 1px solid #00AAFF;
+}
+
+.input_right{
+	display: block;
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	left: 164px;
+	top: 64px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 2px 2px 2px 2px;
+	transition: border 0.5s, background-color 0.5s;
+	-moz-transition: border 0.5s, background-color 0.5s; /* Firefox 4 */
+	-webkit-transition: border 0.5s, background-color 0.5s; /* Safari and Chrome */
+	-o-transition: border 0.5s, background-color 0.5s; /* Opera */
+}
+
+.input_right:hover{
+	border: 1px solid #00AAFF;
+}
+
+.input_drop{
+	display: block;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	left: 240px;
+	top: 30px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 2px 2px 2px 2px;
+	transition: border 0.5s, background-color 0.5s;
+	-moz-transition: border 0.5s, background-color 0.5s; /* Firefox 4 */
+	-webkit-transition: border 0.5s, background-color 0.5s; /* Safari and Chrome */
+	-o-transition: border 0.5s, background-color 0.5s; /* Opera */
+}
+
+.input_drop:hover{
+	border: 1px solid #00AAFF;
+}
+
+.input_pickup{
+	display: block;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	left: 290px;
+	top: 30px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 2px 2px 2px 2px;
+	transition: border 0.5s, background-color 0.5s;
+	-moz-transition: border 0.5s, background-color 0.5s; /* Firefox 4 */
+	-webkit-transition: border 0.5s, background-color 0.5s; /* Safari and Chrome */
+	-o-transition: border 0.5s, background-color 0.5s; /* Opera */
+}
+
+.input_pickup:hover{
+	border: 1px solid #00AAFF;
+}
+
+.input_map{
+	display: block;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	left: 240px;
+	top: 80px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 2px 2px 2px 2px;
+	transition: border 0.5s, background-color 0.5s;
+	-moz-transition: border 0.5s, background-color 0.5s; /* Firefox 4 */
+	-webkit-transition: border 0.5s, background-color 0.5s; /* Safari and Chrome */
+	-o-transition: border 0.5s, background-color 0.5s; /* Opera */
+}
+
+.input_map:hover{
+	border: 1px solid #00AAFF;
+}
+
+.input_use{
+	display: block;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	left: 290px;
+	top: 80px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 2px 2px 2px 2px;
+	transition: border 0.5s, background-color 0.5s;
+	-moz-transition: border 0.5s, background-color 0.5s; /* Firefox 4 */
+	-webkit-transition: border 0.5s, background-color 0.5s; /* Safari and Chrome */
+	-o-transition: border 0.5s, background-color 0.5s; /* Opera */
+}
+
+.input_use:hover{
+	border: 1px solid #00AAFF;
+}
+
+.grab_keystroke{
+	background-color: #0569FF;
+	border: 1px solid #00AAFF;
+}
+
+.movement_label{
+	display: block;
+	width: 80px;
+	position: absolute;
+	left: 90px;
+	top: 6px;
+	text-align: center;
+	font-size: small;
+}
+
+.action_label{
+	display: block;
+	width: 90px;
+	position: absolute;
+	left: 220px;
+	top: 6px;
+	text-align: center;
+	font-size: small;
+}
+
+.speed_label{
+	display: block;
+	width: 90px;
+	position: absolute;
+	left: 400px;
+	top: 6px;
+	text-align: center;
+	font-size: small;
+}
+
+.speed_bar{
+	display: block;
+	width: 120px;
+	position: absolute;
+	left: 400px;
+	top: 30px;
+}
+
+.speed_display{
+	display: block;
+	width: 50px;
+	position: absolute;
+	left: 525px;
+	top: 30px;
+	text-align: center;
+	font-size: small;
+}
+
+.movement_controls{
+	vertical-align: top;
+	margin-left: 50%;
+	position: absolute; 
+	left: -500px; 
+	top: 60px;
+	height: 80px;
+	width: 100px;
+}
+
+.forward_button{
+	margin-left: 50%;
+	width: 30px;
+	left: -15px;
+	position: relative;
+}
+
+.left_button{
+	width: 30px;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+}
+
+.back_button{
+	margin-left: 50%;
+	width: 30px;
+	left: -15px;
+	position: absolute;
+	top: 30px;
+}
+
+.right_button{
+	width: 30px;
+	position: absolute;
+	top: 30px;
+	right: 0px;
+}
