@@ -472,7 +472,7 @@ function UpdateView()
 	
 	DrawDistantFrontWall(five_left,five_right,four_left_forward,four_right_forward,four_to_five_right,four_to_five_left);
 	
-	paper.image(DISTANT_FOG.src,TL5[0],TL5[1],18,11)
+	paper.image(DISTANT_FOG.src, TL5[0],TL5[1],18,11)
 }
 
 function GetWallInformation()
