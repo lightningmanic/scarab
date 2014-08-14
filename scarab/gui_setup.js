@@ -124,6 +124,11 @@ function SetupDivs()
 	document.getElementById('update_button').style.left = ((window.innerWidth / 2) - 410) + 'px';
 	document.getElementById('update_button').style.top = '400px';
 	
+	// position the BUG REPORT button
+	document.getElementById('bug_report_button').style.position = 'absolute';
+	document.getElementById('bug_report_button').style.left = ((window.innerWidth / 2) - 500) + 'px';
+	document.getElementById('bug_report_button').style.top = '450px';
+	
 	// position the LOAD button
 	document.getElementById('load_button').style.position = 'absolute';
 	document.getElementById('load_button').style.left = ((window.innerWidth / 2) - 500) + 'px';
@@ -228,26 +233,6 @@ function UpdateDescription()
 	// if it's -1, clear the description
 	if(index >= 0)
 		AddMessage(users_inventory[index].getDescription());
-}
-
-
-// Draws the movement box
-// It contains a title "Movement"
-// and the following 10 buttons:
-//  Look left, look behind, Look right
-//  Turn left, move forward, turn right
-//  Null Button, turn around, backup, Pick Up
-function Movement()
-{
-    
-}
-
-
-// This function sets up the "News" window.
-// It has a title and a scrolling DIV of news
-function News()
-{
-    
 }
 
 // This function sets up the compass on the screen below the main view-port

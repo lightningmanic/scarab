@@ -74,18 +74,22 @@ function KeyPress(event)
 	{
 		case left:	// Turn Left
 			LeftTurn();
+			event.stopPropagation();
 			return false;
 			break;
 		case forward:	// Go Forward
 			MoveForward();
+			event.stopPropagation();
 			return false;
 			break;
 		case right:	// Turn Right
 			RightTurn();
+			event.stopPropagation();
 			return false;
 			break;
 		case backward:	// Take a step backwards
 			MoveBackward();
+			event.stopPropagation();
 			return false;
 			break;
 	}

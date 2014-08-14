@@ -2,26 +2,24 @@ function FurtherSetup()
 {
 	document.getElementById('view').innerHTML = '';
 	
+	// Setup the compass (or reset)
+	Compass();
 	
-    Compass();
-    
-    
+	// Setup items for this level
+	SetupItems();
 	
-   // Setup items for this level
-   SetupItems();
-   
-   // Setup NPCs
-   SetupNPCs();
-   
-   // update the inventory list
-   UpdateInventoryList();
+	// Setup NPCs
+	SetupNPCs();
+	
+	// update the inventory list
+	UpdateInventoryList();
 	
 	LoadMaze();
 	
 	// setup a bank (if it decides to itself...)
 	// we do this AFTER the maze is generated since it depends on cell information
 	// for the maze...
-    SetupBank();
+	SetupBank();
 	
 	StartMaze();
 }
