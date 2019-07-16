@@ -669,6 +669,9 @@ function UseSelectedItem()
 		
 	// otherwise, call this item's use function!
 	users_inventory[selected_item].use();
+
+	// and deselect the inventory list
+	$('#inventory_list').focusout();
 }
 
 
