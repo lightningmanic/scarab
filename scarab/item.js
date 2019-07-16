@@ -173,6 +173,12 @@ function SetupItems()
 		{
 			// create a random trap
 			GenerateRandomTrap();
+
+			// if there's a trap, let's make sure there's a good chance
+			// for a pole too
+			if(Math.floor(Math.random()*5)+1 != 1){
+				level_items.push(SetupPole());
+			}
 		}
 	}
 	
