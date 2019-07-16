@@ -120,7 +120,7 @@ function SetupItems()
 		}
 		
 		// do a separate chance for food
-		if((Math.floor(Math.random()*40)+1) <= current_level)
+		if((Math.floor(Math.random()*10)+1) <= current_level)
 		{
 				// setup some food in some place
 				level_items.push(SetupFood());
