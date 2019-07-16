@@ -671,7 +671,7 @@ function UseSelectedItem()
 	users_inventory[selected_item].use();
 
 	// and deselect the inventory list
-	$('#inventory_list').focusout();
+	$('#inventory_list').blur();
 }
 
 
