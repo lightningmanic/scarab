@@ -33,6 +33,13 @@ function SetupBank()
 	location_of_bank = new Array();
 	location_of_bank.push(Math.floor(Math.random()*WIDTH));
 	location_of_bank.push(Math.floor(Math.random()*HEIGHT));
+
+	// make sure it's not in the corner...
+	while(IsCorner(location_of_bank[0], location_of_bank[1])){
+		location_of_bank = new Array();
+		location_of_bank.push(Math.floor(Math.random()*WIDTH));
+		location_of_bank.push(Math.floor(Math.random()*HEIGHT));
+	}
 	
 	// get a list of walls for that cell
 	var cell = Maze[location_of_bank[0]][location_of_bank[1]];
@@ -46,6 +53,20 @@ function SetupBank()
 	bank_wall = random_wall;
 	
 	return true;
+}
+
+function IsCorner(x, y)
+{
+	if(x == 0 && y == 0)
+	{
+		return true;
+	}
+
+	if(x == (WIDTH-1) && y == (HEIGHT - 1)){
+		return true;
+	}
+
+	return false;
 }
 
 
